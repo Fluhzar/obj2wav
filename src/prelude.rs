@@ -10,3 +10,5 @@ pub type Vector = nalgebra::Vector3<Scalar>;
 
 pub use crate::geometry::Vertex;
 pub use crate::geometry::Edge;
+
+pub type AdjList = std::collections::BTreeMap<Vertex, Vec<Edge>>;
